@@ -33,8 +33,10 @@ public class Main {
 
         int reduction = reduce(Arrays.asList(reduction1,reduction2), 0, op);
 
+        System.out.println(ints.parallelStream().reduce(0, Integer::sum));
+//        System.out.println(ints.parallelStream().reduce(0, (partialAgeResult, user)-> partialAgeResult + user.getAge(), Integer::sum));
 
-        System.out.println("Reduction: " + reduction);
+//        System.out.println("Reduction: " + reduction);
 
     }
 }
